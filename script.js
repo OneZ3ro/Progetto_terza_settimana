@@ -313,7 +313,7 @@ const howManyDays = (date) => {
     Difference_In_Time / (1000 * 3600 * 24)
   );
   console.log(
-    "--------------- Esercizio 8 ---------------\nQuanti giorni sono passati:",
+    "--------------- Esercizio 9 ---------------\nQuanti giorni sono passati:",
     Difference_In_Days
   );
 };
@@ -324,6 +324,20 @@ howManyDays(new Date("07/10/2023"));
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+
+const isTodayMyBirthday = () => {
+  const date_now = new Date();
+  const num_giorno_att = date_now.getDate();
+  const num_mese = date_now.getMonth();
+
+  if (num_giorno_att === 17 && num_mese === 0) {
+    console.log("Oggi è il tuo compleanno");
+  } else {
+    console.log("Oggi NON è il tuo compleanno");
+  }
+};
+console.log("--------------- Esercizio 10 ---------------\n");
+isTodayMyBirthday();
 
 //______________________________________________________________________________________________
 
