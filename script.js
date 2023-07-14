@@ -553,6 +553,20 @@ onlyTheYears();
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 
+const onlyInLastMillennium = () => {
+  const arr_last_mill = [];
+  for (let i = 0; i < movies.length; i++) {
+    let year = parseInt(movies[i].Year);
+    if (year < 2000) {
+      arr_last_mill.push(movies[i]);
+    }
+  }
+  console.log(arr_last_mill);
+};
+console.log("--------------- Esercizio 15 ---------------\n");
+
+onlyInLastMillennium();
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 16
