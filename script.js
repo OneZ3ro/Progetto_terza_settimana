@@ -80,14 +80,14 @@ console.log(
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
-const add_me_to_skills = () => {
-  skills.unshift(me);
+const add_skills_to_me = () => {
+  me.skills = [...skills];
   console.log(
-    "--------------- Esercio F ---------------\nAggiunto in prima posizione obj 'me' all'array 'skills'",
-    skills
+    "--------------- Esercio F ---------------\nAggiunto array 'skills' nell'obj 'me'",
+    me
   );
 };
-add_me_to_skills();
+add_skills_to_me();
 
 //______________________________________________________________________________________________
 
