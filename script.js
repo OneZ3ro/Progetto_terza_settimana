@@ -656,8 +656,11 @@ removeIndex(2);
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-const div_container = document.getElementById("container");
-console.log("--------------- Esercizio 20 ---------------\n", div_container);
+const es20 = () => {
+  const div_container = document.getElementById("container");
+  console.log("--------------- Esercizio 20 ---------------\n", div_container);
+};
+es20();
 
 //______________________________________________________________________________________________
 
@@ -666,7 +669,10 @@ console.log("--------------- Esercizio 20 ---------------\n", div_container);
 */
 
 const td = document.querySelectorAll("td");
-console.log("--------------- Esercizio 21 ---------------\n", td);
+const es21 = () => {
+  console.log("--------------- Esercizio 21 ---------------\n", td);
+};
+es21();
 
 //______________________________________________________________________________________________
 
@@ -674,10 +680,13 @@ console.log("--------------- Esercizio 21 ---------------\n", td);
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
-console.log("--------------- Esercizio 22 ---------------\n");
-for (let i = 0; i < td.length; i++) {
-  console.log(td[i].innerText);
-}
+const es22 = () => {
+  console.log("--------------- Esercizio 22 ---------------\n");
+  for (let i = 0; i < td.length; i++) {
+    console.log(td[i].innerText);
+  }
+};
+es22();
 
 //______________________________________________________________________________________________
 
@@ -685,11 +694,14 @@ for (let i = 0; i < td.length; i++) {
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
-console.log("--------------- Esercizio 23 ---------------\nDone");
-const a = document.querySelectorAll("a");
-for (let i = 0; i < a.length; i++) {
-  a[i].style.backgroundColor = "red";
-}
+const es23 = () => {
+  console.log("--------------- Esercizio 23 ---------------\nDone");
+  const a = document.querySelectorAll("a");
+  for (let i = 0; i < a.length; i++) {
+    a[i].style.backgroundColor = "red";
+  }
+};
+es23();
 
 //______________________________________________________________________________________________
 
@@ -698,9 +710,13 @@ for (let i = 0; i < a.length; i++) {
 */
 
 const ul = document.getElementById("myList");
-const li = document.createElement("li");
-li.innerText = "Nuovo elemento";
-ul.append(li);
+const es24 = () => {
+  console.log("--------------- Esercizio 24 ---------------\nDone");
+  const li = document.createElement("li");
+  li.innerText = "Nuovo elemento";
+  ul.append(li);
+};
+es24();
 
 //______________________________________________________________________________________________
 
@@ -708,6 +724,11 @@ ul.append(li);
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+const es25 = () => {
+  console.log("--------------- Esercizio 25 ---------------\nDone");
+  ul.innerText = "";
+};
+es25();
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 26
