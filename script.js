@@ -15,7 +15,7 @@ REGOLE
 
 const sum = 10 + 20;
 console.log(
-  "--------------- Esercio 1 ---------------\nSomma tra 10 e 20:",
+  "--------------- Esercio A ---------------\nSomma tra 10 e 20:",
   sum
 );
 
@@ -36,7 +36,7 @@ const esB = () => {
   div_esB.appendChild(dentro_esB_div);
 };
 btn_esB.onclick = esB;
-console.log("--------------- Esercio 2 ---------------\nDone");
+console.log("--------------- Esercio B ---------------\nDone");
 
 //______________________________________________________________________________________________
 
@@ -49,13 +49,19 @@ const me = {
   surname: "Moreno",
   age: 21,
 };
-console.log("--------------- Esercio 3 ---------------\nObj me:", me);
+console.log("--------------- Esercio C ---------------\nObj me:", me);
 
 //______________________________________________________________________________________________
 
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
+
+const remove_me_age = () => {
+  delete me.age;
+  console.log("--------------- Esercio D ---------------\nRemoved age:", me);
+};
+remove_me_age();
 
 //______________________________________________________________________________________________
 
