@@ -697,6 +697,11 @@ for (let i = 0; i < a.length; i++) {
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+const ul = document.getElementById("myList");
+const li = document.createElement("li");
+li.innerText = "Nuovo elemento";
+ul.append(li);
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 25
