@@ -15,7 +15,7 @@ REGOLE
 
 const sum = 10 + 20;
 console.log(
-  "--------------- Esercio A ---------------\nSomma tra 10 e 20:",
+  "--------------- Esercizio A ---------------\nSomma tra 10 e 20:",
   sum
 );
 
@@ -36,7 +36,7 @@ const esB = () => {
   div_esB.appendChild(dentro_esB_div);
 };
 btn_esB.onclick = esB;
-console.log("--------------- Esercio B ---------------\nDone");
+console.log("--------------- Esercizio B ---------------\nDone");
 
 //______________________________________________________________________________________________
 
@@ -49,7 +49,7 @@ const me = {
   surname: "Moreno",
   age: 21,
 };
-console.log("--------------- Esercio C ---------------\nObj 'me':", me);
+console.log("--------------- Esercizio C ---------------\nObj 'me':", me);
 
 //______________________________________________________________________________________________
 
@@ -59,7 +59,7 @@ console.log("--------------- Esercio C ---------------\nObj 'me':", me);
 
 const remove_me_age = () => {
   delete me.age;
-  console.log("--------------- Esercio D ---------------\nRemoved age:", me);
+  console.log("--------------- Esercizio D ---------------\nRemoved age:", me);
 };
 remove_me_age();
 
@@ -71,7 +71,7 @@ remove_me_age();
 
 const skills = ["HTML", "CSS", "JS"];
 console.log(
-  "--------------- Esercio E ---------------\nLe mie skills:",
+  "--------------- Esercizio E ---------------\nLe mie skills:",
   skills
 );
 
@@ -83,7 +83,7 @@ console.log(
 const add_skills_to_me = () => {
   me.skills = [...skills];
   console.log(
-    "--------------- Esercio F ---------------\nAggiunto array 'skills' nell'obj 'me'",
+    "--------------- Esercizio F ---------------\nAggiunto array 'skills' nell'obj 'me'",
     me
   );
 };
@@ -94,6 +94,20 @@ add_skills_to_me();
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+
+const remove_last_skill = () => {
+  for (let i = 0; i < me.skills.length; i++) {
+    console.log(me.skills[i]);
+    if (i === me.skills.length - 1) {
+      me.skills.splice(i, 1);
+    }
+  }
+  console.log(
+    "--------------- Esercizio G ---------------\nTolto ultima skill",
+    me
+  );
+};
+remove_last_skill();
 
 //______________________________________________________________________________________________
 
