@@ -232,6 +232,26 @@ onlyLetters("I have 444444 dogs and 2393 cats");
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+const isThisAnEmail = (str) => {
+  console.log("--------------- Esercizio 6 ---------------\n");
+  let email = "";
+  for (let i = 0; i < str.length; i++) {
+    email += str[i];
+    if (str[i] === "@") {
+      if (email.length > 2 && email.length < 30) {
+        console.log("true");
+      } else {
+        console.log("Non è un email");
+        break;
+      }
+      break;
+    } else if (email.length === str.length) {
+      console.log("Non è un email");
+    }
+  }
+};
+isThisAnEmail("prova@gmail.com");
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 7
