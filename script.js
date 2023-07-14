@@ -69,6 +69,12 @@ remove_me_age();
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 
+const skills = ["HTML", "CSS", "JS"];
+console.log(
+  "--------------- Esercio E ---------------\nLe mie skills:",
+  skills
+);
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO F
