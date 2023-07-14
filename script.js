@@ -592,26 +592,15 @@ sumAllTheYears();
 */
 
 const searchByTitle = (str) => {
-  // The Lord of the Rings: The Fellowship of the Ring
-  const arr_movies_title = [];
-  const arr_movies_simili = [];
   for (let i = 0; i < movies.length; i++) {
-    arr_movies_title.push(movies[i].Title.split(" "));
-  }
-  // console.log(arr_movies_title);
-  for (let k = 0; k < arr_movies_title.length; k++) {
-    for (let j = 0; j < arr_movies_title[k].length; j++) {
-      if (arr_movies_title[k][j] === str) {
-        arr_movies_simili.push(movies[k]);
-      }
+    if (movies[i].Title === str) {
+      console.log(movies[i].Title);
     }
   }
-  console.log("Array movies simili\n", arr_movies_simili);
 };
-console.log("--------------- Esercizio 17 ---------------\n");
-console.log("Array movies", movies);
+console.log("--------------- Esercizio 17 ---------------\nIl tuo film:");
 
-searchByTitle("Avengers:");
+searchByTitle("The Lord of the Rings: The Fellowship of the Ring");
 
 //______________________________________________________________________________________________
 
@@ -619,6 +608,28 @@ searchByTitle("Avengers:");
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
+
+const searchAndDivide = (str) => {
+  const arr_movies_title = [];
+  const arr_movies_match = [];
+  for (let i = 0; i < movies.length; i++) {
+    arr_movies_title.push(movies[i].Title.split(" "));
+  }
+  // console.log(arr_movies_title);
+  for (let k = 0; k < arr_movies_title.length; k++) {
+    for (let j = 0; j < arr_movies_title[k].length; j++) {
+      if (arr_movies_title[k][j] === str) {
+        arr_movies_match.push(movies[k]);
+      }
+    }
+  }
+
+  console.log("Array movies match\n", arr_movies_match);
+};
+console.log("--------------- Esercizio 18 ---------------\n");
+console.log("Array movies", movies);
+
+searchAndDivide("Avengers:");
 
 //______________________________________________________________________________________________
 
