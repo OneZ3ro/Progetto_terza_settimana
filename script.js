@@ -36,7 +36,9 @@ const esB = () => {
   div_esB.appendChild(dentro_esB_div);
 };
 btn_esB.onclick = esB;
-console.log("--------------- Esercizio B ---------------\nDone");
+console.log(
+  "--------------- Esercizio B ---------------\nPremi il bottone nella pagina web"
+);
 
 //______________________________________________________________________________________________
 
@@ -116,6 +118,15 @@ remove_last_skill();
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
+
+const dice = () => {
+  const dice_num = Math.floor(Math.random() * 6) + 1;
+  console.log(
+    "--------------- Esercizio 1 ---------------\nNumero casuale da 1 a 6:",
+    dice_num
+  );
+};
+dice();
 
 //______________________________________________________________________________________________
 
