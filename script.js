@@ -121,12 +121,12 @@ remove_last_skill();
 
 const dice = () => {
   const dice_num = Math.floor(Math.random() * 6) + 1;
-  console.log(
-    "--------------- Esercizio 1 ---------------\nNumero casuale da 1 a 6:",
-    dice_num
-  );
+  return dice_num;
 };
-dice();
+console.log(
+  "--------------- Esercizio 1 ---------------\nNumero casuale da 1 a 6:",
+  dice()
+);
 
 //______________________________________________________________________________________________
 
@@ -273,8 +273,7 @@ whatDayIsIt();
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
-  Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum":
-  il suo valore deve rappresentare il totale di tutti i valori estratti con le invocazioni di dice().
+  Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum": il suo valore deve rappresentare il totale di tutti i valori estratti con le invocazioni di dice().
   L'oggetto ritornato deve anche contenere una proprietà "values", contenente un array con tutti i valori estratti dalle invocazioni di dice().
 
   Example:
@@ -283,6 +282,23 @@ whatDayIsIt();
       values: [3, 3, 4]
   }
 */
+
+const rollTheDices = (par) => {
+  const prop_dice = {
+    sum: null,
+    values: [],
+  };
+
+  for (let i = 0; i < par; i++) {
+    let num_dice = dice();
+    prop_dice.sum += num_dice;
+    prop_dice.values[i] = num_dice;
+  }
+
+  console.log(prop_dice);
+};
+console.log("--------------- Esercizio 8 ---------------\n");
+rollTheDices(10);
 
 //______________________________________________________________________________________________
 
