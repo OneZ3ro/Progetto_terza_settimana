@@ -346,10 +346,34 @@ isTodayMyBirthday();
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
 
 /* ESERCIZIO 11
-  Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
-  in esso la proprietà chiamata come la stringa passata come secondo parametro.
+  Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
+const autos = [
+  {
+    Nome: "Audi",
+    Year: "2001",
+    Targa: "AB 123 CD",
+    Modello: "S",
+  },
+
+  {
+    Nome: "Fiat",
+    Year: "1990",
+    Targa: "EF 456 GH",
+    Modello: "Panda",
+  },
+];
+
+const deleteProp = (obj, str) => {
+  for (let i = 0; i < autos.length; i++) {
+    delete obj[i][str];
+  }
+  console.log(autos);
+};
+console.log("--------------- Esercizio 11 ---------------\n");
+
+deleteProp(autos, "Year");
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 12
