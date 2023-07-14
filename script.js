@@ -159,6 +159,12 @@ whoIsBigger(5, 6);
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
+const splitMe = (str) => {
+  const str_splittata = str.split(" ");
+  console.log("--------------- Esercizio 3 ---------------\n", str_splittata);
+};
+splitMe("Eiusmod veniam et ea anim veniam nulla");
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 4
