@@ -239,7 +239,7 @@ const isThisAnEmail = (str) => {
     email += str[i];
     if (str[i] === "@") {
       if (email.length > 2 && email.length < 30) {
-        console.log("true");
+        console.log("La email è corretta");
       } else {
         console.log("Non è un email");
         break;
@@ -257,6 +257,17 @@ isThisAnEmail("prova@gmail.com");
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+
+const whatDayIsIt = () => {
+  console.log("--------------- Esercizio 7 ---------------\n");
+  const adesso = new Date();
+  const num_giorno_att = adesso.getDate();
+  const num_mese = adesso.getMonth() + 1;
+  const anno_att = adesso.getFullYear();
+  const giorno_attuale = num_giorno_att + "/" + num_mese + "/" + anno_att;
+  console.log(giorno_attuale);
+};
+whatDayIsIt();
 
 //______________________________________________________________________________________________
 
