@@ -685,6 +685,12 @@ for (let i = 0; i < td.length; i++) {
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+console.log("--------------- Esercizio 23 ---------------\nDone");
+const a = document.querySelectorAll("a");
+for (let i = 0; i < a.length; i++) {
+  a[i].style.backgroundColor = "red";
+}
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 24
