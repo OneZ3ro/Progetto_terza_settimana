@@ -44,6 +44,13 @@ console.log("--------------- Esercio 2 ---------------\nDone");
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
 
+const me = {
+  nome: "Angelo",
+  surname: "Moreno",
+  age: 21,
+};
+console.log("--------------- Esercio 3 ---------------\nObj me:", me);
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO D
