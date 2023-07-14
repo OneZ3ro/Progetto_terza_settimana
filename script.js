@@ -200,6 +200,32 @@ deleteOne(
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+const onlyLetters = (str) => {
+  console.log(
+    "--------------- Esercizio 5 ---------------\nStringa iniziale:\n",
+    str
+  );
+  // metodo facile ma che ancora non abbiamo visto
+  // const stringa = str.replace(/[0-9]/g, "");
+  // console.log(stringa);
+
+  // metodo classico
+  const stringa = str.split(" ");
+  const arr_num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  for (let i = 0; i < stringa.length; i++) {
+    const prima_lettera = stringa[i].slice(0, 1);
+    for (let j = 0; j < arr_num.length; j++) {
+      if (prima_lettera === arr_num[j]) {
+        stringa.splice(i, 1);
+      }
+    }
+  }
+  const result = stringa.join(" ");
+
+  console.log("Stringa finale:\n", result);
+};
+onlyLetters("I have 444444 dogs and 2393 cats");
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 6
