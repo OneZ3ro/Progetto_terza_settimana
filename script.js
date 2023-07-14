@@ -627,7 +627,6 @@ const searchAndDivide = (str) => {
   console.log("Array movies match\n", arr_movies_match);
 };
 console.log("--------------- Esercizio 18 ---------------\n");
-console.log("Array movies", movies);
 
 searchAndDivide("Avengers:");
 
@@ -637,9 +636,21 @@ searchAndDivide("Avengers:");
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
-// DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
+const removeIndex = (num) => {
+  for (let i = 0; i < movies.length; i++) {
+    if (i === num) {
+      movies.splice(i, 1);
+    }
+  }
+  console.log("Array movies", movies);
+};
+
+console.log("--------------- Esercizio 19 ---------------\n");
+removeIndex(2);
 
 //______________________________________________________________________________________________
+
+// DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
