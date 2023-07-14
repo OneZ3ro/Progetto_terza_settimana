@@ -172,6 +172,26 @@ splitMe("Eiusmod veniam et ea anim veniam nulla");
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
+const deleteOne = (str, boolean) => {
+  if (boolean) {
+    const stringa = str.slice(1);
+    console.log(
+      "--------------- Esercizio 4 ---------------\nRimosso il primo carattere:\n",
+      stringa
+    );
+  } else {
+    const stringa = str.slice(0, -1);
+    console.log(
+      "--------------- Esercizio 4 ---------------\nRimosso l'ultimo carattere:\n",
+      stringa
+    );
+  }
+};
+deleteOne(
+  "Consequat consectetur veniam irure anim voluptate do tempor fugiat ex officia nulla",
+  true
+);
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 5
