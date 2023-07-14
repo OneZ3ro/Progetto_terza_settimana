@@ -29,11 +29,11 @@ const div_esB = document.getElementById("div_esB");
 
 const esB = () => {
   const random_num = Math.floor(Math.random() * 21);
-  const span_esB = document.createElement("span");
+  const dentro_esB_div = document.createElement("div");
 
   div_esB.innerText = "";
-  span_esB.innerText = `Numero casuale esB: ${random_num}`;
-  div_esB.appendChild(span_esB);
+  dentro_esB_div.innerText = `Numero casuale esB: ${random_num}`;
+  div_esB.appendChild(dentro_esB_div);
 };
 btn_esB.onclick = esB;
 console.log("--------------- Esercio 2 ---------------\nDone");
