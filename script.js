@@ -656,6 +656,8 @@ removeIndex(2);
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+document.getElementById("container");
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 21
