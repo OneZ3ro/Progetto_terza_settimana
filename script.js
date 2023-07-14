@@ -517,6 +517,19 @@ newestMovie();
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 
+const countMovies = () => {
+  let j = 0;
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].Type === "movie") {
+      j++;
+    }
+  }
+  console.log(`Nell'array ci sono ${j} films`);
+};
+console.log("--------------- Esercizio 13 ---------------\n");
+
+countMovies();
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 14
