@@ -657,7 +657,7 @@ removeIndex(2);
 */
 
 const div_container = document.getElementById("container");
-console.log(div_container);
+console.log("--------------- Esercizio 20 ---------------\n", div_container);
 
 //______________________________________________________________________________________________
 
@@ -666,13 +666,18 @@ console.log(div_container);
 */
 
 const td = document.querySelectorAll("td");
-console.log(td);
+console.log("--------------- Esercizio 21 ---------------\n", td);
 
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+
+console.log("--------------- Esercizio 22 ---------------\n");
+for (let i = 0; i < td.length; i++) {
+  console.log(td[i].innerText);
+}
 
 //______________________________________________________________________________________________
 
