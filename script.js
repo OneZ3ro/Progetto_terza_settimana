@@ -306,6 +306,19 @@ rollTheDices(10);
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
+const howManyDays = (date) => {
+  const date_now = new Date();
+  const Difference_In_Time = date_now.getTime() - date.getTime();
+  const Difference_In_Days = Math.floor(
+    Difference_In_Time / (1000 * 3600 * 24)
+  );
+  console.log(
+    "--------------- Esercizio 8 ---------------\nQuanti giorni sono passati:",
+    Difference_In_Days
+  );
+};
+howManyDays(new Date("07/10/2023"));
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 10
