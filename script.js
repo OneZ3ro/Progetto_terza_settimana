@@ -664,6 +664,8 @@ document.getElementById("container");
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 
+document.querySelectorAll("td");
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 22
