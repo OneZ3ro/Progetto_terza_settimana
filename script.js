@@ -49,7 +49,7 @@ const me = {
   surname: "Moreno",
   age: 21,
 };
-console.log("--------------- Esercio C ---------------\nObj me:", me);
+console.log("--------------- Esercio C ---------------\nObj 'me':", me);
 
 //______________________________________________________________________________________________
 
@@ -80,6 +80,14 @@ console.log(
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
+const add_me_to_skills = () => {
+  skills.unshift(me);
+  console.log(
+    "--------------- Esercio F ---------------\nAggiunto in prima posizione obj 'me' all'array 'skills'",
+    skills
+  );
+};
+add_me_to_skills();
 
 //______________________________________________________________________________________________
 
