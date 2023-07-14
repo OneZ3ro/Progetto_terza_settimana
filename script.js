@@ -573,6 +573,18 @@ onlyInLastMillennium();
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
+const sumAllTheYears = () => {
+  let result = 0;
+  for (let i = 0; i < movies.length; i++) {
+    let year = parseInt(movies[i].Year);
+    result = result + year;
+  }
+  console.log("La somma di tutti gli anni dell'array è:", result);
+};
+console.log("--------------- Esercizio 16 ---------------\n");
+
+sumAllTheYears();
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 17
