@@ -656,7 +656,8 @@ removeIndex(2);
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-document.getElementById("container");
+const div_container = document.getElementById("container");
+console.log(div_container);
 
 //______________________________________________________________________________________________
 
@@ -664,7 +665,8 @@ document.getElementById("container");
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 
-document.querySelectorAll("td");
+const td = document.querySelectorAll("td");
+console.log(td);
 
 //______________________________________________________________________________________________
 
