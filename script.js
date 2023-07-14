@@ -134,6 +134,23 @@ dice();
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 
+const whoIsBigger = (num1, num2) => {
+  if (num1 > num2) {
+    console.log(
+      `--------------- Esercizio 2 ---------------\nIl numero ${num1} è maggiore di ${num2}`
+    );
+  } else if (num2 > num1) {
+    console.log(
+      `--------------- Esercizio 2 ---------------\nIl numero ${num2} è maggiore di ${num1}`
+    );
+  } else {
+    console.log(
+      `--------------- Esercizio 2 ---------------\nIl numero ${num2} e il numero ${num1} sono uguali`
+    );
+  }
+};
+whoIsBigger(5, 6);
+
 //______________________________________________________________________________________________
 
 /* ESERCIZIO 3
