@@ -24,8 +24,19 @@ console.log(
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
+const btn_esB = document.getElementById("esB");
+const div_esB = document.getElementById("div_esB");
 
-//______________________________________________________________________________________________
+const esB = () => {
+  const random_num = Math.floor(Math.random() * 21);
+  const span_esB = document.createElement("span");
+
+  div_esB.innerText = "";
+  span_esB.innerText = `Numero casuale esB: ${random_num}`;
+  div_esB.appendChild(span_esB);
+};
+btn_esB.onclick = esB;
+console.log("--------------- Esercio 2 ---------------\nDone");
 
 //______________________________________________________________________________________________
 
